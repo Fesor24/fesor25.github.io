@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/36e1422280.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Wale Portfolio</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span>F</span>esor</h1>
+                <!-- <img src="img/Cool Text - FESOR 421890923934045.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fa-solid fa-bars-progress" onclick="openmenu()"></i>
+                
+            </nav>
+            <header class="header-text">
+                <p>Software <span>Engineer</span></p>
+                <h1>Hi, I'm <span>Wale</span></h1>
+            </header>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/img3.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Olawale Onfaeso, a graduate of Law from the University of Lagos. Over the past year, I have developed interest in software engineering and I have taken positive steps to actualise my dream of being a software engineer. I am also a Data Analyst. During my free time, I listen to J.Cole. I think everyone should do actually <i class="fa-solid fa-face-smile"></i></p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education/Training</p>
+                        <p class="tab-links" onclick="opentab('languages')">Languages</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+
+                            <li><span>Data Analyst</span><br>Analyse and interprete data</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Alx Software Engineering (on-going)</li>
+                            <li><span>2022</span><br>Google Data Analytics</li>
+                            <li><span>2022</span><br>IBM Data Analytics</li>
+                            <li><span>2021</span><br>B.L from Nigerian Law School</li>
+                            <li><span>2019</span><br>LL.B from University of Lagos</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="languages">
+                        <ul>
+                            <li>C#</li>
+                            <li>Dot Net Framework</li>
+                            <li>Angular</li>
+                            <li>Html & CSS</li>
+                            <li>Python</li>
+                            <li>R</li>
+                            <li>SQL</li>
+                            <li>Tableau</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-adn"></i>
+                    <h2>Web Development</h2>
+                    <p>I utilise C#, Dot Net Framework to create efficient back end service. I believe in writing clean code and utilising a good design architecture. Other programming languages I amf familiar with are Angular, JavaScript, jQuery. Click on the link below to see a couple of my projects</p>
+                    <a href="https://www.linkedin.com/in/olawale-onafeso-41379822a/" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Analyst</h2>
+                    <p>Data cleaning, data wrangling, data exploration, analysis and visualization falls within my area of specialisation. I utilise Python and R for statistical analysis. Also, I do a lot of web scraping with Python. Click on the link to below to see my projects on Data Analytics</p>
+                    <a href="https://fesor24.github.io" target="_blank">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/drinks.jpg" alt="">
+                    <div class="layer">
+                        <h3>Drinks E-Commerce Store</h3>
+                        <p>I built an e-commerce store with Dot Net where you can order various categories of drinks</p>
+                        <a href="https://www.linkedin.com/posts/olawale-onafeso-41379822a_aspnet-entityframework-activity-6978627711049084929-vzo8?utm_source=share&utm_medium=member_desktop" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/form.jpg" alt="">
+                    <div class="layer">
+                        <h3>Web Forms</h3>
+                        <p>I created an AJAX web form to perform CRUD operations with Dot Net, jQuery and MsSql</p>
+                        <a href="https://www.linkedin.com/posts/olawale-onafeso-41379822a_netdeveloper-aspnetcore-crud-activity-6981559360237776896-Vu85?utm_source=share&utm_medium=member_desktop" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/games.jpg" alt="">
+                    <div class="layer">
+                        <h3>RESTful Apis</h3>
+                        <p>I built a secured restful api with JWT tokens using Dot Net Framework</p>
+                        <a href="https://www.linkedin.com/posts/olawale-onafeso-41379822a_netdeveloper-aspnet-restfulapi-activity-6983354044480143360-HPpN?utm_source=share&utm_medium=member_desktop" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Fesor24?tab=repositories" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> onafesowale@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +2348186088250</p>
+                    <div class="socials">
+                        <a href="https://www.linkedin.com/in/olawale-onafeso-41379822a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Fesor24?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+
+                    <a href="img/DotNet_cv.pdf" download class="btn btn-cv">Download CV</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i></p>
+    </div>
+
+
+</body>
+
+<script src="main.js"></script>
+
+</html>
